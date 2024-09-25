@@ -12,8 +12,6 @@ const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 
 const dbPath = path.join(__dirname, "todo.db");
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
 const corsOptions = {
   origin: "https://todobyfazil.netlify.app/", // Replace with your frontend domain

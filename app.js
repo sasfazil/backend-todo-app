@@ -14,7 +14,7 @@ const sqlite3 = require("sqlite3");
 const dbPath = path.join(__dirname, "todo.db");
 
 const corsOptions = {
-  origin: "https://todobyfazil.netlify.app/", // Replace with your frontend domain
+  origin: "https://todobyfazil.netlify.app", // Replace with your frontend domain
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   credentials: true, // Allow cookies
   optionsSuccessStatus: 204, // Some legacy browsers choke on 204
